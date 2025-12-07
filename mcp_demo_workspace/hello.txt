@@ -1,0 +1,2 @@
+Hello, MCP Filesystem Tool!
+This is a demonstration.

@@ -1,0 +1,11 @@
+{
+  "application": "MCP Filesystem Demo",
+  "version": "1.0.0",
+  "features": [
+    "read",
+    "write",
+    "list",
+    "search"
+  ],
+  "enabled": true
+}

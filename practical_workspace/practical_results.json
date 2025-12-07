@@ -1,0 +1,329 @@
+{
+  "summary": {
+    "total_operations": 28,
+    "successful": 28,
+    "errors": 0,
+    "warnings": 0,
+    "success_rate": "100.0%"
+  },
+  "operations": [
+    {
+      "timestamp": "2025-12-07T14:22:25.666730",
+      "operation": "setup_workspace",
+      "status": "SUCCESS",
+      "details": "Created workspace directory: /projects/sandbox/awstest/practical_workspace"
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.666777",
+      "operation": "write_json_file",
+      "status": "SUCCESS",
+      "details": "Wrote JSON data to app_config.json",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/practical_workspace/app_config.json",
+        "keys": [
+          "version",
+          "database",
+          "cache_enabled"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.666810",
+      "operation": "read_json_file",
+      "status": "SUCCESS",
+      "details": "Read JSON data from app_config.json",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/practical_workspace/app_config.json",
+        "keys": [
+          "version",
+          "database",
+          "cache_enabled"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.666857",
+      "operation": "write_json_file",
+      "status": "SUCCESS",
+      "details": "Wrote JSON data to app_config.json",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/practical_workspace/app_config.json",
+        "keys": [
+          "version",
+          "database",
+          "cache_enabled"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.666882",
+      "operation": "read_json_file",
+      "status": "SUCCESS",
+      "details": "Read JSON data from app_config.json",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/practical_workspace/app_config.json",
+        "keys": [
+          "version",
+          "database",
+          "cache_enabled"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.666932",
+      "operation": "create_directory",
+      "status": "SUCCESS",
+      "details": "Created directory: logs/application",
+      "data": {
+        "path": "/projects/sandbox/awstest/practical_workspace/logs/application"
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.666953",
+      "operation": "create_directory",
+      "status": "SUCCESS",
+      "details": "Created directory: logs/system",
+      "data": {
+        "path": "/projects/sandbox/awstest/practical_workspace/logs/system"
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.666979",
+      "operation": "write_text_file",
+      "status": "SUCCESS",
+      "details": "Wrote 48 bytes to logs/application/app.log",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/practical_workspace/logs/application/app.log",
+        "size": 48
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.667001",
+      "operation": "write_text_file",
+      "status": "SUCCESS",
+      "details": "Wrote 30 bytes to logs/system/sys.log",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/practical_workspace/logs/system/sys.log",
+        "size": 30
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.667024",
+      "operation": "search_in_file",
+      "status": "SUCCESS",
+      "details": "Found 1 matches for 'ERROR' in logs/application/app.log",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/practical_workspace/logs/application/app.log",
+        "matches": [
+          {
+            "line_number": 2,
+            "content": "2024-01-01 ERROR Failed",
+            "position": 11
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.667050",
+      "operation": "write_text_file",
+      "status": "SUCCESS",
+      "details": "Wrote 20 bytes to important_data.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/practical_workspace/important_data.txt",
+        "size": 20
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.667071",
+      "operation": "create_directory",
+      "status": "SUCCESS",
+      "details": "Created directory: backups",
+      "data": {
+        "path": "/projects/sandbox/awstest/practical_workspace/backups"
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.667112",
+      "operation": "copy_file",
+      "status": "SUCCESS",
+      "details": "Copied important_data.txt to backups/important_data_backup.txt",
+      "data": {
+        "source": "/projects/sandbox/awstest/practical_workspace/important_data.txt",
+        "destination": "/projects/sandbox/awstest/practical_workspace/backups/important_data_backup.txt",
+        "size": 20
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.667123",
+      "operation": "file_exists",
+      "status": "SUCCESS",
+      "details": "File exists: backups/important_data_backup.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/practical_workspace/backups/important_data_backup.txt",
+        "exists": true
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.667165",
+      "operation": "create_directory",
+      "status": "SUCCESS",
+      "details": "Created directory: pipeline/input",
+      "data": {
+        "path": "/projects/sandbox/awstest/practical_workspace/pipeline/input"
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.667185",
+      "operation": "create_directory",
+      "status": "SUCCESS",
+      "details": "Created directory: pipeline/output",
+      "data": {
+        "path": "/projects/sandbox/awstest/practical_workspace/pipeline/output"
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.667213",
+      "operation": "write_text_file",
+      "status": "SUCCESS",
+      "details": "Wrote 13 bytes to pipeline/input/data_0.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/practical_workspace/pipeline/input/data_0.txt",
+        "size": 13
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.667244",
+      "operation": "write_text_file",
+      "status": "SUCCESS",
+      "details": "Wrote 13 bytes to pipeline/input/data_1.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/practical_workspace/pipeline/input/data_1.txt",
+        "size": 13
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.667280",
+      "operation": "write_text_file",
+      "status": "SUCCESS",
+      "details": "Wrote 13 bytes to pipeline/input/data_2.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/practical_workspace/pipeline/input/data_2.txt",
+        "size": 13
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.667309",
+      "operation": "list_directory",
+      "status": "SUCCESS",
+      "details": "Listed 3 items in pipeline/input",
+      "data": {
+        "path": "/projects/sandbox/awstest/practical_workspace/pipeline/input",
+        "items": [
+          "data_0.txt",
+          "data_1.txt",
+          "data_2.txt"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.667351",
+      "operation": "copy_file",
+      "status": "SUCCESS",
+      "details": "Copied pipeline/input/data_0.txt to pipeline/output/processed_data_0.txt",
+      "data": {
+        "source": "/projects/sandbox/awstest/practical_workspace/pipeline/input/data_0.txt",
+        "destination": "/projects/sandbox/awstest/practical_workspace/pipeline/output/processed_data_0.txt",
+        "size": 13
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.667385",
+      "operation": "copy_file",
+      "status": "SUCCESS",
+      "details": "Copied pipeline/input/data_1.txt to pipeline/output/processed_data_1.txt",
+      "data": {
+        "source": "/projects/sandbox/awstest/practical_workspace/pipeline/input/data_1.txt",
+        "destination": "/projects/sandbox/awstest/practical_workspace/pipeline/output/processed_data_1.txt",
+        "size": 13
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.667420",
+      "operation": "copy_file",
+      "status": "SUCCESS",
+      "details": "Copied pipeline/input/data_2.txt to pipeline/output/processed_data_2.txt",
+      "data": {
+        "source": "/projects/sandbox/awstest/practical_workspace/pipeline/input/data_2.txt",
+        "destination": "/projects/sandbox/awstest/practical_workspace/pipeline/output/processed_data_2.txt",
+        "size": 13
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.667439",
+      "operation": "list_directory",
+      "status": "SUCCESS",
+      "details": "Listed 3 items in pipeline/output",
+      "data": {
+        "path": "/projects/sandbox/awstest/practical_workspace/pipeline/output",
+        "items": [
+          "processed_data_0.txt",
+          "processed_data_2.txt",
+          "processed_data_1.txt"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.667466",
+      "operation": "write_text_file",
+      "status": "SUCCESS",
+      "details": "Wrote 15 bytes to tracked_file.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/practical_workspace/tracked_file.txt",
+        "size": 15
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.667494",
+      "operation": "get_file_info",
+      "status": "SUCCESS",
+      "details": "Retrieved info for tracked_file.txt",
+      "data": {
+        "name": "tracked_file.txt",
+        "path": "/projects/sandbox/awstest/practical_workspace/tracked_file.txt",
+        "size": 15,
+        "is_file": true,
+        "is_directory": false,
+        "created": "2025-12-07T14:22:25.657522",
+        "modified": "2025-12-07T14:22:25.657522",
+        "accessed": "2025-12-07T14:22:25.657522"
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.667539",
+      "operation": "append_to_file",
+      "status": "SUCCESS",
+      "details": "Appended 19 bytes to tracked_file.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/practical_workspace/tracked_file.txt",
+        "appended_size": 19,
+        "total_size": 34
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.667560",
+      "operation": "get_file_info",
+      "status": "SUCCESS",
+      "details": "Retrieved info for tracked_file.txt",
+      "data": {
+        "name": "tracked_file.txt",
+        "path": "/projects/sandbox/awstest/practical_workspace/tracked_file.txt",
+        "size": 34,
+        "is_file": true,
+        "is_directory": false,
+        "created": "2025-12-07T14:22:25.657522",
+        "modified": "2025-12-07T14:22:25.657522",
+        "accessed": "2025-12-07T14:22:25.657522"
+      }
+    }
+  ]
+}

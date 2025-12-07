@@ -1,0 +1,7 @@
+{
+  "id": 1,
+  "name": "Product A",
+  "price": 100,
+  "quantity": 5,
+  "total_value": 500
+}

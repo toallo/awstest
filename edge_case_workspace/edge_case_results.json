@@ -1,0 +1,216 @@
+{
+  "summary": {
+    "total_operations": 19,
+    "successful": 19,
+    "errors": 0,
+    "warnings": 0,
+    "success_rate": "100.0%"
+  },
+  "operations": [
+    {
+      "timestamp": "2025-12-07T14:22:25.664944",
+      "operation": "setup_workspace",
+      "status": "SUCCESS",
+      "details": "Created workspace directory: /projects/sandbox/awstest/edge_case_workspace"
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.664974",
+      "operation": "write_text_file",
+      "status": "SUCCESS",
+      "details": "Wrote 0 bytes to empty.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/edge_case_workspace/empty.txt",
+        "size": 0
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.665000",
+      "operation": "read_text_file",
+      "status": "SUCCESS",
+      "details": "Read 0 bytes from empty.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/edge_case_workspace/empty.txt",
+        "size": 0
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.665054",
+      "operation": "write_text_file",
+      "status": "SUCCESS",
+      "details": "Wrote 10000 bytes to large.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/edge_case_workspace/large.txt",
+        "size": 10000
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.665080",
+      "operation": "read_text_file",
+      "status": "SUCCESS",
+      "details": "Read 10000 bytes from large.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/edge_case_workspace/large.txt",
+        "size": 10000
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.665114",
+      "operation": "write_text_file",
+      "status": "SUCCESS",
+      "details": "Wrote 36 bytes to special.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/edge_case_workspace/special.txt",
+        "size": 36
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.665133",
+      "operation": "read_text_file",
+      "status": "SUCCESS",
+      "details": "Read 36 bytes from special.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/edge_case_workspace/special.txt",
+        "size": 36
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.665229",
+      "operation": "create_directory",
+      "status": "SUCCESS",
+      "details": "Created directory: level1/level2/level3",
+      "data": {
+        "path": "/projects/sandbox/awstest/edge_case_workspace/level1/level2/level3"
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.665253",
+      "operation": "list_directory",
+      "status": "SUCCESS",
+      "details": "Listed 1 items in level1/level2",
+      "data": {
+        "path": "/projects/sandbox/awstest/edge_case_workspace/level1/level2",
+        "items": [
+          "level3"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.665284",
+      "operation": "write_text_file",
+      "status": "SUCCESS",
+      "details": "Wrote 14 bytes to level1/nested_file.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/edge_case_workspace/level1/nested_file.txt",
+        "size": 14
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.665304",
+      "operation": "read_text_file",
+      "status": "SUCCESS",
+      "details": "Read 14 bytes from level1/nested_file.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/edge_case_workspace/level1/nested_file.txt",
+        "size": 14
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.665331",
+      "operation": "write_text_file",
+      "status": "SUCCESS",
+      "details": "Wrote 7 bytes to append_test.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/edge_case_workspace/append_test.txt",
+        "size": 7
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.665373",
+      "operation": "append_to_file",
+      "status": "SUCCESS",
+      "details": "Appended 7 bytes to append_test.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/edge_case_workspace/append_test.txt",
+        "appended_size": 7,
+        "total_size": 14
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.666348",
+      "operation": "append_to_file",
+      "status": "SUCCESS",
+      "details": "Appended 7 bytes to append_test.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/edge_case_workspace/append_test.txt",
+        "appended_size": 7,
+        "total_size": 21
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.666372",
+      "operation": "read_text_file",
+      "status": "SUCCESS",
+      "details": "Read 21 bytes from append_test.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/edge_case_workspace/append_test.txt",
+        "size": 21
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.666422",
+      "operation": "write_text_file",
+      "status": "SUCCESS",
+      "details": "Wrote 11 bytes to search_test.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/edge_case_workspace/search_test.txt",
+        "size": 11
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.666449",
+      "operation": "search_in_file",
+      "status": "SUCCESS",
+      "details": "Found 0 matches for 'xyz' in search_test.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/edge_case_workspace/search_test.txt",
+        "matches": []
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.666475",
+      "operation": "write_text_file",
+      "status": "SUCCESS",
+      "details": "Wrote 49 bytes to multi_match.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/edge_case_workspace/multi_match.txt",
+        "size": 49
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.666503",
+      "operation": "search_in_file",
+      "status": "SUCCESS",
+      "details": "Found 3 matches for 'error' in multi_match.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/edge_case_workspace/multi_match.txt",
+        "matches": [
+          {
+            "line_number": 1,
+            "content": "error here",
+            "position": 0
+          },
+          {
+            "line_number": 3,
+            "content": "error there",
+            "position": 0
+          },
+          {
+            "line_number": 4,
+            "content": "error everywhere",
+            "position": 0
+          }
+        ]
+      }
+    }
+  ]
+}
