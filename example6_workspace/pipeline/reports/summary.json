@@ -1,0 +1,27 @@
+{
+  "total_items": 3,
+  "total_revenue": 2300,
+  "items": [
+    {
+      "id": 2,
+      "name": "Product B",
+      "price": 200,
+      "quantity": 3,
+      "total_value": 600
+    },
+    {
+      "id": 1,
+      "name": "Product A",
+      "price": 100,
+      "quantity": 5,
+      "total_value": 500
+    },
+    {
+      "id": 3,
+      "name": "Product C",
+      "price": 150,
+      "quantity": 8,
+      "total_value": 1200
+    }
+  ]
+}

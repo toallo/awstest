@@ -1,0 +1,63 @@
+{
+  "summary": {
+    "total_operations": 8,
+    "successful": 2,
+    "errors": 5,
+    "warnings": 1,
+    "success_rate": "25.0%"
+  },
+  "operations": [
+    {
+      "timestamp": "2025-12-07T14:22:25.664526",
+      "operation": "setup_workspace",
+      "status": "SUCCESS",
+      "details": "Created workspace directory: /projects/sandbox/awstest/test_workspace"
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.664565",
+      "operation": "read_text_file",
+      "status": "ERROR",
+      "details": "File not found: does_not_exist.txt"
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.664665",
+      "operation": "write_text_file",
+      "status": "SUCCESS",
+      "details": "Wrote 24 bytes to invalid.json",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/test_workspace/invalid.json",
+        "size": 24
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.664718",
+      "operation": "read_json_file",
+      "status": "ERROR",
+      "details": "Invalid JSON in invalid.json: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.664739",
+      "operation": "copy_file",
+      "status": "ERROR",
+      "details": "Source file not found: missing.txt"
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.664758",
+      "operation": "list_directory",
+      "status": "ERROR",
+      "details": "Directory not found: nonexistent_dir"
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.664771",
+      "operation": "get_file_info",
+      "status": "ERROR",
+      "details": "File not found: phantom.txt"
+    },
+    {
+      "timestamp": "2025-12-07T14:22:25.664782",
+      "operation": "delete_file",
+      "status": "WARNING",
+      "details": "File does not exist (already deleted?): already_gone.txt"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+error here
+some text
+error there
+error everywhere

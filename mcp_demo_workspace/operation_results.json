@@ -1,0 +1,215 @@
+{
+  "summary": {
+    "total_operations": 18,
+    "successful": 18,
+    "errors": 0,
+    "warnings": 0,
+    "success_rate": "100.0%"
+  },
+  "operations": [
+    {
+      "timestamp": "2025-12-07T14:21:19.966212",
+      "operation": "setup_workspace",
+      "status": "SUCCESS",
+      "details": "Created workspace directory: /projects/sandbox/awstest/mcp_demo_workspace"
+    },
+    {
+      "timestamp": "2025-12-07T14:21:19.966289",
+      "operation": "write_text_file",
+      "status": "SUCCESS",
+      "details": "Wrote 52 bytes to hello.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/mcp_demo_workspace/hello.txt",
+        "size": 52
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:21:19.966329",
+      "operation": "write_text_file",
+      "status": "SUCCESS",
+      "details": "Wrote 51 bytes to notes.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/mcp_demo_workspace/notes.txt",
+        "size": 51
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:21:19.966569",
+      "operation": "write_json_file",
+      "status": "SUCCESS",
+      "details": "Wrote JSON data to config.json",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/mcp_demo_workspace/config.json",
+        "keys": [
+          "application",
+          "version",
+          "features",
+          "enabled"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:21:19.966609",
+      "operation": "read_text_file",
+      "status": "SUCCESS",
+      "details": "Read 52 bytes from hello.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/mcp_demo_workspace/hello.txt",
+        "size": 52
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:21:19.966647",
+      "operation": "read_json_file",
+      "status": "SUCCESS",
+      "details": "Read JSON data from config.json",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/mcp_demo_workspace/config.json",
+        "keys": [
+          "application",
+          "version",
+          "features",
+          "enabled"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:21:19.966682",
+      "operation": "create_directory",
+      "status": "SUCCESS",
+      "details": "Created directory: logs",
+      "data": {
+        "path": "/projects/sandbox/awstest/mcp_demo_workspace/logs"
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:21:19.966738",
+      "operation": "create_directory",
+      "status": "SUCCESS",
+      "details": "Created directory: data/input",
+      "data": {
+        "path": "/projects/sandbox/awstest/mcp_demo_workspace/data/input"
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:21:19.966766",
+      "operation": "list_directory",
+      "status": "SUCCESS",
+      "details": "Listed 5 items in workspace root",
+      "data": {
+        "path": "/projects/sandbox/awstest/mcp_demo_workspace",
+        "items": [
+          "notes.txt",
+          "data",
+          "hello.txt",
+          "config.json",
+          "logs"
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:21:19.966808",
+      "operation": "get_file_info",
+      "status": "SUCCESS",
+      "details": "Retrieved info for hello.txt",
+      "data": {
+        "name": "hello.txt",
+        "path": "/projects/sandbox/awstest/mcp_demo_workspace/hello.txt",
+        "size": 52,
+        "is_file": true,
+        "is_directory": false,
+        "created": "2025-12-07T14:21:19.947624",
+        "modified": "2025-12-07T14:21:19.947624",
+        "accessed": "2025-12-07T14:21:19.957624"
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:21:19.966819",
+      "operation": "file_exists",
+      "status": "SUCCESS",
+      "details": "File exists: hello.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/mcp_demo_workspace/hello.txt",
+        "exists": true
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:21:19.966835",
+      "operation": "file_exists",
+      "status": "SUCCESS",
+      "details": "File does not exist: nonexistent.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/mcp_demo_workspace/nonexistent.txt",
+        "exists": false
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:21:19.966884",
+      "operation": "copy_file",
+      "status": "SUCCESS",
+      "details": "Copied hello.txt to hello_backup.txt",
+      "data": {
+        "source": "/projects/sandbox/awstest/mcp_demo_workspace/hello.txt",
+        "destination": "/projects/sandbox/awstest/mcp_demo_workspace/hello_backup.txt",
+        "size": 52
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:21:19.966956",
+      "operation": "append_to_file",
+      "status": "SUCCESS",
+      "details": "Appended 59 bytes to notes.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/mcp_demo_workspace/notes.txt",
+        "appended_size": 59,
+        "total_size": 110
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:21:19.968347",
+      "operation": "append_to_file",
+      "status": "SUCCESS",
+      "details": "Appended 41 bytes to notes.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/mcp_demo_workspace/notes.txt",
+        "appended_size": 41,
+        "total_size": 151
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:21:19.968439",
+      "operation": "write_text_file",
+      "status": "SUCCESS",
+      "details": "Wrote 227 bytes to logs/app.log",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/mcp_demo_workspace/logs/app.log",
+        "size": 227
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:21:19.968487",
+      "operation": "search_in_file",
+      "status": "SUCCESS",
+      "details": "Found 1 matches for 'ERROR' in logs/app.log",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/mcp_demo_workspace/logs/app.log",
+        "matches": [
+          {
+            "line_number": 4,
+            "content": "2024-01-15 10:00:15 ERROR Connection timeout",
+            "position": 20
+          }
+        ]
+      }
+    },
+    {
+      "timestamp": "2025-12-07T14:21:19.968520",
+      "operation": "delete_file",
+      "status": "SUCCESS",
+      "details": "Deleted file: hello_backup.txt",
+      "data": {
+        "filepath": "/projects/sandbox/awstest/mcp_demo_workspace/hello_backup.txt"
+      }
+    }
+  ]
+}
